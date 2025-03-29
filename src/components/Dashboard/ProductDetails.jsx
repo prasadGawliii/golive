@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom"; // ✅ Import Link
+import { useParams, Link } from "react-router-dom"; 
 import axios from "axios";
 import "./ProductDetails.css";
 
