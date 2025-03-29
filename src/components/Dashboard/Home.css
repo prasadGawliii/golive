@@ -112,7 +112,7 @@
   }
 }
 
-
+/* Apply animations when section is visible */
 .featured-products.show .col-md-4:nth-child(1) .card {
   animation: fadeInLeft 3s ease-out forwards;
 }

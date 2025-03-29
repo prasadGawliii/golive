@@ -14,7 +14,7 @@ const Register = () => {
 
   const handleSubmit = (values) => {
     console.log(values);
-    navigate("/login"); 
+    navigate("/login"); // Redirect to login after signup
   };
 
   return (

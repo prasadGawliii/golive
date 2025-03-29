@@ -24,7 +24,7 @@ const Home = () => {
       return;
     }
     toast.success("Subscribed ");
-    setEmail(""); 
+    setEmail(""); // Clear input after submission
   };
 
 
@@ -54,7 +54,7 @@ const Home = () => {
         <Carousel/>
       </div>
 
-      
+      {/* Hero Section */}
       <header className="hero-section">
 
         <div className="container text-center animated-border">

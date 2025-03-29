@@ -7,7 +7,7 @@ const ProductList = () => {
   const [items, setItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [isCategoryOpen, setIsCategoryOpen] = useState(false); 
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false); // Toggle for mobile
 
   const categories = ["all", "jewelery", "men's clothing", "women's clothing", "electronics"];
 
@@ -15,7 +15,7 @@ const ProductList = () => {
     axios.get("https://fakestoreapi.com/products")
       .then((response) => {
         setItems(response.data);
-        setFilteredItems(response.data); 
+        setFilteredItems(response.data); // Show all products by default
       });
   }, []);
 

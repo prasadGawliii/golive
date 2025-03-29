@@ -4,7 +4,7 @@
     padding: 20px;
 }
 
-
+/* Category Section */
 .categories {
     margin-top: 40px;
     margin-left: 28px;
@@ -16,7 +16,7 @@
     max-height: 350px;
     text-align: center;
 
-    width: 150px; 
+    width: 150px; /* Fixed width */
     min-width: 150px;
     max-width: 150px;
 }
@@ -36,7 +36,7 @@
     margin-bottom: 10px;
 }
 
-
+/* Category List */
 .category-list {
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@
     font-weight: bold;
 }
 
-
+/* Product Section */
 .products {
     margin-left: 80px;
     margin-top: 60px;
@@ -97,7 +97,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.6s ease-in-out forwards;
-    animation-delay: 0.3s; 
+    animation-delay: 0.3s; /* Adds slight delay for better effect */
 
     transition: transform 0.3s ease-in-out;
     
@@ -125,24 +125,24 @@
 /* 📱 Mobile View: Change Layout */
 @media (max-width: 768px) {
     .main-container {
-        flex-direction: column; 
+        flex-direction: column; /* Stack items */
         align-items: center;
     }
 
     .categories {
-        width: 100%; 
+        width: 100%; /* Full width */
         max-width: 100%;
         margin-left: 0;
         text-align: center;
-        display: none; 
+        display: none; /* Hide by default */
     }
 
     .categories.active {
-        display: block; 
+        display: block; /* Show when toggled */
     }
 
     .category-toggle {
-        display: block; 
+        display: block; /* Show only on mobile */
         color:rgb(17, 18, 18)
     }
 
