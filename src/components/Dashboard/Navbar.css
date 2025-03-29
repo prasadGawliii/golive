@@ -1,0 +1,48 @@
+.auth {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center on small screens */
+}
+
+
+.auth button {
+    width: auto;
+}
+
+
+
+.navbar {
+    display: flex; /* ✅ Makes the navbar a flex container */
+    align-items: center; /* ✅ Aligns items vertically */
+    justify-content: space-between; /* ✅ Spreads elements evenly */
+    width: 100%; /* ✅ Ensures full width */
+    padding: 10px 20px;
+    background-color: rgb(251, 207, 105);
+    flex-wrap: wrap; /* ✅ Allows wrapping on small screens */
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ✅ Space between icon & text */
+}
+
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* ✅ Stack elements on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-buttons {
+        margin-top: 10px;
+    }
+}

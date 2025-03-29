@@ -1,0 +1,157 @@
+
+.product-details-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: center; 
+}
+
+
+.product-images {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+.main-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+
+.product-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+
+.rating {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #e67e22;
+}
+
+
+.price-section {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #27ae60;
+}
+
+
+.product-description {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+
+.related-products-section {
+    margin-top: 40px;
+}
+
+
+.related-products-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+
+.related-products-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    white-space: nowrap; 
+}
+
+
+.related-products-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.related-products-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.related-products-container::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+
+.related-product-card {
+    min-width: 150px;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+
+.related-product-card:hover {
+    transform: scale(1.05);
+}
+
+
+.related-product-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+
+.related-product-card p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-images {
+        width: 100%;
+    }
+
+    .product-info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .related-products-container {
+        justify-content: center;
+    }
+}
